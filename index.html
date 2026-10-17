@@ -2,140 +2,287 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Hafele Chimney & Hob Repair, Cleaning and Service in Ghaziabad</title>
-<meta name="description" content="Enquire about Hafele kitchen chimney and hob repair, cleaning, installation and maintenance in Ghaziabad.">
+<title>Hafele Chimney & Hob Service in Ghaziabad | Repair & Cleaning</title>
+<meta name="description" content="Looking for Hafele chimney and hob repair, cleaning or installation in Ghaziabad? Enquire about independent kitchen appliance service, troubleshooting and maintenance.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#111827">
+<meta property="og:title" content="Hafele Chimney & Hob Service in Ghaziabad">
+<meta property="og:description" content="Enquire about kitchen chimney repair, cleaning, installation and hob service in Ghaziabad.">
+<meta property="og:type" content="website">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:20px}
-body{font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6;background:#f8fafc;padding-bottom:80px}
-a{text-decoration:none}
+:root {
+  --dark: #111827;
+  --red: #dc2626;
+  --yellow: #fbbf24;
+  --green: #15803d;
+  --blue: #2563eb;
+  --muted: #64748b;
+  --light: #f8fafc;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 20px; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: var(--light);
+  line-height: 1.7;
+  padding-bottom: 76px;
+}
+a { text-decoration: none; }
+img { max-width: 100%; }
+header {
+  background: var(--dark);
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.logo { color: white; font-size: 21px; font-weight: 800; }
+.logo .brand-red { color: #f87171; }
+nav { display: flex; gap: 15px; flex-wrap: wrap; }
+nav a { color: white; font-size: 14px; }
+nav a:hover { color: var(--yellow); }
 
-header{background:#111827;color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.logo{color:white;font-size:22px;font-weight:bold}
-.logo span{color:#fbbf24}
-nav{display:flex;gap:15px;flex-wrap:wrap}
-nav a{color:white;font-size:14px}
-
-/* HERO BACKGROUND PHOTO AND TITLE ARE PRESERVED */
-.hero{
-  padding:48px 5%;
-  color:white;
-  text-align:center;
+/* Hero background photo and title */
+.hero {
+  padding: 58px 5%;
+  color: white;
+  text-align: center;
   background:
-    linear-gradient(rgba(17,24,39,.83),rgba(17,24,39,.88)),
+    linear-gradient(rgba(17,24,39,.76), rgba(17,24,39,.84)),
     url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=80")
     center/cover no-repeat;
 }
-.hero-inner{max-width:850px;margin:auto}
-.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin-bottom:12px}
-.hero-intro{font-size:16px}
-
-/* BOOKING FORM DIRECTLY BELOW HERO */
-.booking-section{padding:32px 5%;background:#f8fafc}
-.booking-box{
-  max-width:600px;
-  margin:0 auto;
-  background:white;
-  color:#1f2937;
-  padding:25px;
-  border-radius:14px;
-  text-align:left;
-  box-shadow:0 10px 35px rgba(0,0,0,.12);
-  border:1px solid #e5e7eb;
+.hero-inner { max-width: 900px; margin: auto; }
+.hero h1 {
+  font-size: clamp(29px, 5vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-wrap: balance;
 }
-.booking-box h2{text-align:center;margin-bottom:5px;color:#111827;font-size:26px}
-.subtext{text-align:center;color:#64748b;margin-bottom:18px;font-size:14px}
-
-label{display:block;font-weight:bold;margin:12px 0 5px}
-input,select,textarea{
-  width:100%;padding:12px;border:1px solid #cbd5e1;
-  border-radius:7px;font:inherit;background:white;color:#1f2937
+.hero h1 .brand-red { color: #ff6b6b; }
+.hero-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: clamp(15px, 2vw, 18px);
+  color: #f3f4f6;
 }
-textarea{min-height:75px;resize:vertical}
-
-.btn{
-  display:flex;justify-content:center;align-items:center;gap:8px;
-  padding:13px 18px;border:none;border-radius:7px;
-  font-size:15px;font-weight:bold;cursor:pointer;margin-top:14px
+.hero-points {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.btn-green{background:#16a34a;color:white}
-.btn-dark{background:#111827;color:white}
-.full-width{width:100%}
-
-section.content-section{padding:48px 5%}
-.section-title{text-align:center;margin-bottom:28px}
-.section-title h2{color:#111827;font-size:clamp(25px,4vw,34px);margin-bottom:8px}
-.section-title p{color:#64748b}
-
-.cards{
-  max-width:1150px;margin:auto;
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px
-}
-.card{
-  background:white;border:1px solid #e5e7eb;border-radius:12px;
-  padding:22px;box-shadow:0 4px 16px rgba(15,23,42,.05)
-}
-.card h3{margin-bottom:8px;color:#111827}
-.card p{color:#475569}
-.service-photo{
-  width:100%;height:190px;object-fit:cover;border-radius:8px;
-  margin-bottom:14px;display:block;background:#e5e7eb
+.hero-points span {
+  border: 1px solid rgba(255,255,255,.4);
+  background: rgba(255,255,255,.1);
+  border-radius: 30px;
+  padding: 7px 13px;
+  font-size: 13px;
 }
 
-.content{
-  max-width:1000px;margin:auto;background:white;border:1px solid #e5e7eb;
-  border-radius:12px;padding:26px
+/* Booking form directly under the hero */
+.booking-section { padding: 32px 5%; background: #f1f5f9; }
+.booking-box {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 26px;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 35px rgba(15,23,42,.10);
 }
-.content h3{margin:20px 0 8px}
-.content h3:first-child{margin-top:0}
-.content p{color:#475569}
-
-.faq{max-width:900px;margin:auto}
-details{background:white;border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px}
-summary{cursor:pointer;font-weight:bold}
-details p{margin-top:10px;color:#475569}
-
-footer{background:#111827;color:#e5e7eb;text-align:center;padding:32px 5%}
-footer p{margin:8px 0}
-footer a{color:#fbbf24}
-
-/* FIXED STICKY BUTTONS */
-.sticky-actions{
-  position:fixed;left:0;right:0;bottom:0;z-index:999;
-  display:flex;gap:10px;padding:10px 12px;
-  background:white;box-shadow:0 -3px 15px rgba(0,0,0,.15)
+.booking-box h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--dark);
+  line-height: 1.3;
 }
-.sticky-actions a{
-  flex:1;text-align:center;padding:12px 8px;
-  border-radius:8px;font-weight:bold;color:white
+.booking-box .subtext {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 8px 0 18px;
 }
-.sticky-book{background:#16a34a}
-.sticky-call{background:#2563eb}
+label { display: block; font-weight: 700; margin: 12px 0 5px; }
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+  color: #1f2937;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+textarea { min-height: 85px; resize: vertical; }
+.btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn-green { background: var(--green); color: white; }
+.btn-dark { background: var(--dark); color: white; }
+.btn:hover { filter: brightness(.94); }
+.form-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
 
-@media(max-width:600px){
-  header{justify-content:center;text-align:center}
-  nav{justify-content:center}
-  .hero{padding:38px 4%}
-  .booking-box{padding:19px}
-  section.content-section{padding:38px 5%}
-  .content{padding:20px}
-  .service-photo{height:170px}
-  .sticky-actions{gap:8px;padding:9px}
-  .sticky-actions a{font-size:14px}
+/* Section layout */
+.content-section { padding: 50px 5%; }
+.section-title { max-width: 850px; margin: 0 auto 28px; text-align: center; }
+.section-title h2 {
+  color: var(--dark);
+  font-size: clamp(25px, 4vw, 35px);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+.section-title p { color: var(--muted); }
+.cards {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 19px;
+}
+.card {
+  min-width: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  padding: 21px;
+  box-shadow: 0 4px 16px rgba(15,23,42,.045);
+}
+.card h3 { color: var(--dark); font-size: 19px; margin-bottom: 8px; }
+.card p { color: #475569; font-size: 15px; }
+.service-photo {
+  width: 100%;
+  height: 185px;
+  display: block;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 15px;
+  background: #e2e8f0;
+}
+.content {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  padding: 27px;
+}
+.content h3 { margin: 20px 0 7px; color: var(--dark); }
+.content h3:first-child { margin-top: 0; }
+.content p { color: #475569; margin-bottom: 10px; }
+.content ul { padding-left: 22px; color: #475569; }
+.content li { margin: 6px 0; }
+.faq { max-width: 900px; margin: auto; }
+details {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+summary { cursor: pointer; font-weight: 700; color: var(--dark); }
+details p { color: #475569; margin-top: 10px; }
+.cta-panel {
+  max-width: 1000px;
+  margin: 28px auto 0;
+  background: #111827;
+  color: white;
+  padding: 26px;
+  text-align: center;
+  border-radius: 13px;
+}
+.cta-panel h3 { font-size: 24px; margin-bottom: 7px; }
+.cta-panel p { color: #e5e7eb; }
+.cta-panel a {
+  display: inline-block;
+  margin-top: 14px;
+  background: var(--yellow);
+  color: #111827;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: #e5e7eb;
+  text-align: center;
+  padding: 32px 5%;
+}
+footer p { margin: 8px 0; font-size: 14px; }
+footer a { color: var(--yellow); }
+
+/* Sticky Book Now + Call Now */
+.sticky-actions {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+  padding: 9px 12px;
+  background: white;
+  box-shadow: 0 -3px 16px rgba(0,0,0,.15);
+}
+.sticky-actions a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+.sticky-book { background: var(--green); }
+.sticky-call { background: var(--blue); }
+
+@media (max-width: 600px) {
+  header { justify-content: center; text-align: center; }
+  nav { justify-content: center; gap: 12px; }
+  .hero { padding: 42px 5%; }
+  .booking-box { padding: 19px; }
+  .content-section { padding: 38px 5%; }
+  .content { padding: 20px; }
+  .service-photo { height: 175px; }
+  .sticky-actions { gap: 8px; padding: 8px; }
+  .sticky-actions a { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 </style>
 </head>
 
 <body>
-
 <header>
-  <a class="logo" href="#home">Hafele<span>Care</span> Ghaziabad</a>
-  <nav>
+  <a class="logo" href="#home"> <span class="brand-red">Hafele</span>Care Ghaziabad</a>
+  <nav aria-label="Main navigation">
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#areas">Areas</a>
@@ -145,34 +292,41 @@ footer a{color:#fbbf24}
 </header>
 
 <main>
-
-<!-- HERO: SAME BACKGROUND PHOTO AND TITLE STYLE -->
+<!-- HERO BACKGROUND PHOTO AND TITLE -->
 <section class="hero" id="home">
   <div class="hero-inner">
-    <h1>Hafele Chimney & Hob Service in Ghaziabad</h1>
+    <h1><span class="brand-red">Hafele</span> Chimney & Hob Repair, Cleaning and Service in Ghaziabad</h1>
     <p class="hero-intro">
-      Enquire about kitchen chimney and hob cleaning, repair,
-      installation and maintenance services in Ghaziabad.
+      Need help with a kitchen chimney that has weak suction, unusual noise,
+      greasy filters or a hob that is not working as expected? Share your
+      appliance details and enquire about independent service options in Ghaziabad.
     </p>
+    <div class="hero-points">
+      <span>Chimney Cleaning</span>
+      <span>Repair Enquiries</span>
+      <span>Hob Troubleshooting</span>
+      <span>Installation Enquiries</span>
+    </div>
   </div>
 </section>
 
-<!-- BOOKING FORM: IMMEDIATELY UNDER THE HERO PHOTO -->
+<!-- FORM DIRECTLY BELOW THE HERO -->
 <section class="booking-section" id="booking">
   <div class="booking-box">
-    <h2>Book a Service</h2>
-    <p class="subtext">Fill in your details to prepare a service enquiry.</p>
+    <h2>Book Your Chimney or Hob Service</h2>
+    <p class="subtext">
+      Tell us what appliance you have and which area you are in.
+    </p>
 
     <form id="bookingForm">
       <label for="customerName">Your Name *</label>
-      <input id="customerName" name="customerName"
-        autocomplete="name" maxlength="80"
-        required placeholder="Enter your name">
+      <input id="customerName" name="customerName" autocomplete="name"
+        maxlength="80" required placeholder="Enter your name">
 
       <label for="customerPhone">Your Phone Number *</label>
-      <input id="customerPhone" name="customerPhone"
-        type="tel" inputmode="numeric" pattern="[0-9]{10}"
-        maxlength="10" required placeholder="10-digit mobile number">
+      <input id="customerPhone" name="customerPhone" type="tel"
+        inputmode="numeric" pattern="[0-9]{10}" maxlength="10"
+        required placeholder="Enter 10-digit mobile number">
 
       <label for="appliance">Choose Appliance *</label>
       <select id="appliance" name="appliance" required>
@@ -188,153 +342,244 @@ footer a{color:#fbbf24}
         <option>Chimney Cleaning</option>
         <option>Chimney Repair</option>
         <option>Motor or Suction Issue</option>
-        <option>Noise Issue</option>
-        <option>Installation</option>
+        <option>Noise or Vibration Issue</option>
+        <option>Chimney Installation</option>
         <option>Hob Troubleshooting</option>
         <option>General Maintenance</option>
         <option>Other Issue</option>
       </select>
 
       <label for="area">Your Area in Ghaziabad *</label>
-      <input id="area" name="area" maxlength="100"
-        required placeholder="e.g. Indirapuram, Vaishali">
+      <input id="area" name="area" maxlength="100" required
+        placeholder="e.g. Indirapuram, Vaishali, Vasundhara">
 
       <label for="problem">Problem Details</label>
       <textarea id="problem" name="problem" maxlength="1000"
-        placeholder="Describe your appliance problem"></textarea>
+        placeholder="Describe the problem or your service requirement"></textarea>
 
-      <button class="btn btn-green full-width" type="submit">
-        BOOK NOW
-      </button>
-
+      <button class="btn btn-green" type="submit">BOOK NOW</button>
       <p id="formMessage" role="status" aria-live="polite"
         style="margin-top:12px;color:#475569;font-size:14px"></p>
 
-      <a class="btn btn-dark full-width" href="tel:8796284796">
-        ☎ CALL NOW: 8796284796
-      </a>
+      <a class="btn btn-dark" href="tel:8796284796">☎ CALL NOW: 8796284796</a>
+
+      <p class="form-note">
+        Submitting this form opens your device's SMS app. Review and send the
+        message to complete your enquiry; details are not stored on this website.
+      </p>
     </form>
   </div>
 </section>
 
-<!-- SERVICES WITH CHIMNEY AND HOB PHOTOS -->
+<!-- SERVICES -->
 <section class="content-section" id="services">
   <div class="section-title">
-    <h2>Hafele Chimney & Hob Services</h2>
-    <p>Enquire about service options for your appliance.</p>
+    <h2>Kitchen Chimney and Hob Service Options in Ghaziabad</h2>
+    <p>
+      Describe the symptoms and appliance model when making an enquiry.
+      The available work and recommended solution depend on inspection.
+    </p>
   </div>
 
   <div class="cards">
     <article class="card">
       <img class="service-photo"
         src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80"
-        alt="Modern kitchen interior for chimney service"
-        loading="lazy">
-      <h3>Chimney Cleaning</h3>
-      <p>Enquire about grease cleaning for accessible filters and suitable chimney components. Service scope depends on model and condition.</p>
+        alt="Modern kitchen cooking area" loading="lazy">
+      <h3>Hafele Chimney Cleaning</h3>
+      <p>
+        Grease build-up on accessible filters can affect everyday kitchen
+        cleanliness and airflow. Enquire about suitable cleaning options for
+        your chimney type, filter design and condition.
+      </p>
     </article>
 
     <article class="card">
       <img class="service-photo"
         src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=900&q=80"
-        alt="Kitchen cooking area"
-        loading="lazy">
-      <h3>Chimney Repair</h3>
-      <p>Ask about power problems, unusual noise, weak suction and controls that are not responding.</p>
-    </article>
-
-    <article class="card">
-      <img class="service-photo"
-        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
-        alt="Kitchen countertop and cooking area"
-        loading="lazy">
-      <h3>Kitchen Hob Service</h3>
-      <p>Enquire about compatible hob issues, including ignition, controls and operating problems.</p>
+        alt="Kitchen cabinets and cooking space" loading="lazy">
+      <h3>Chimney Repair Enquiries</h3>
+      <p>
+        Weak suction, a unit that does not start, control problems or
+        unexpected shutdowns can have different causes. Share the symptoms
+        and model details before deciding on a repair.
+      </p>
     </article>
 
     <article class="card">
       <img class="service-photo"
         src="https://images.unsplash.com/photo-1556911261-6bd341186b2f?auto=format&fit=crop&w=900&q=80"
-        alt="Contemporary kitchen"
-        loading="lazy">
-      <h3>Motor & Suction Issues</h3>
-      <p>Discuss motor noise, airflow concerns and possible component faults. Diagnosis is required before recommending repairs.</p>
+        alt="Contemporary kitchen countertop and hob area" loading="lazy">
+      <h3>Kitchen Hob Service</h3>
+      <p>
+        Enquire about hob troubleshooting for ignition, controls or operating
+        concerns. Gas-related faults should be handled by a suitably qualified
+        professional; do not dismantle gas components yourself.
+      </p>
+    </article>
+
+    <article class="card">
+      <img class="service-photo"
+        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
+        alt="Modern fitted kitchen interior" loading="lazy">
+      <h3>Motor, Suction and Noise</h3>
+      <p>
+        Rattling, vibration and reduced airflow may relate to filters, ducting,
+        installation or internal components. A diagnosis helps identify the
+        likely cause before parts or repairs are discussed.
+      </p>
     </article>
 
     <article class="card">
       <h3>Chimney Installation</h3>
-      <p>Enquire about mounting, ducting and installation requirements for your kitchen and appliance model.</p>
+      <p>
+        Enquire about mounting position, kitchen layout, duct route and
+        electrical requirements. The suitability of an installation depends
+        on the model instructions and conditions at your property.
+      </p>
     </article>
 
     <article class="card">
-      <h3>General Maintenance</h3>
-      <p>Ask about routine maintenance and appliance care based on the manufacturer's instructions for your model.</p>
+      <h3>Routine Maintenance</h3>
+      <p>
+        Regular attention to accessible filters and following the model's
+        care instructions can help keep a chimney in suitable working
+        condition. Maintenance needs vary with cooking habits and appliance design.
+      </p>
     </article>
   </div>
-</section>
 
-<!-- ABOUT -->
-<section class="content-section" id="about">
-  <div class="section-title"><h2>About Our Service</h2></div>
-  <div class="content">
-    <p>We provide independent service enquiries for customers in Ghaziabad who need assistance with kitchen chimneys and compatible kitchen hobs. Contact us to discuss your appliance model, symptoms and location.</p>
-
-    <h3>Service Assessment</h3>
-    <p>The cause of an appliance fault can vary by model, installation, usage and maintenance history. Possible inspection and repair options should be discussed before any work is agreed.</p>
-
-    <h3>Parts and Charges</h3>
-    <p>Parts availability, service charges, visit timing and any applicable warranty terms must be confirmed before work begins. Ask for the terms in writing before approving a repair.</p>
-
-    <h3>Safety</h3>
-    <p>Follow the manufacturer's instructions when cleaning accessible areas. Do not open electrical components or attempt repairs while the appliance is connected to power. If you suspect a gas leak, avoid flames and electrical switches, leave the area and contact the appropriate emergency gas service.</p>
+  <div class="cta-panel">
+    <h3>Need Help With Your Kitchen Appliance?</h3>
+    <p>Share your location, appliance type and the issue you are experiencing.</p>
+    <a href="#booking">Enquire About Service</a>
   </div>
 </section>
 
-<!-- SERVICE AREAS -->
+<!-- ORIGINAL CONTENT -->
+<section class="content-section" id="about">
+  <div class="section-title">
+    <h2>How to Prepare for a Chimney or Hob Service Enquiry</h2>
+    <p>A few details can help clarify the issue before a visit is discussed.</p>
+  </div>
+
+  <div class="content">
+    <h3>1. Identify the Appliance</h3>
+    <p>
+      If possible, note the model number from the product label, manual or
+      purchase documentation. The model can help identify the appliance
+      configuration and the relevant maintenance instructions.
+    </p>
+
+    <h3>2. Describe the Symptoms</h3>
+    <p>
+      For a chimney, mention whether the lights, controls, fan and suction
+      behave normally, and when the sound or airflow problem began. For a hob,
+      describe the control or ignition symptom without opening the appliance
+      or attempting internal repairs.
+    </p>
+
+    <h3>3. Explain the Kitchen Setup</h3>
+    <p>
+      Installation and airflow questions may depend on the mounting height,
+      duct route, outlet position and available space. Photos of the setup
+      can be useful when arranging an assessment, but avoid sharing sensitive
+      personal information in images.
+    </p>
+
+    <h3>4. Confirm Charges and Parts Before Work</h3>
+    <p>
+      Ask about inspection or visit charges, estimated repair costs, parts
+      availability and expected timing before approving work. Any applicable
+      parts warranty should be explained clearly in writing.
+    </p>
+
+    <h3>Independent Service Disclosure</h3>
+    <p>
+      This website provides enquiries for an independent service provider.
+      It is not an official Hafele website, and the service provider is not
+      represented as authorised by or affiliated with Hafele. Product names
+      are used only to identify the appliances customers may enquire about.
+    </p>
+  </div>
+</section>
+
+<!-- AREAS -->
 <section class="content-section" id="areas">
   <div class="section-title">
-    <h2>Areas We Serve in Ghaziabad</h2>
-    <p>Contact us to confirm availability for your location.</p>
+    <h2>Chimney and Hob Service Enquiries Across Ghaziabad</h2>
+    <p>Contact us to confirm availability for your specific locality.</p>
   </div>
 
   <div class="cards">
-    <article class="card"><h3>Indirapuram</h3><p>Enquire about chimney and hob service availability in Indirapuram.</p></article>
-    <article class="card"><h3>Vaishali</h3><p>Discuss appliance service options for your location in Vaishali.</p></article>
-    <article class="card"><h3>Vasundhara</h3><p>Ask about kitchen appliance service availability in Vasundhara.</p></article>
-    <article class="card"><h3>Raj Nagar Extension</h3><p>Enquire about chimney cleaning and repair options in the area.</p></article>
-    <article class="card"><h3>Crossings Republik</h3><p>Ask about appliance troubleshooting in Crossings Republik.</p></article>
-    <article class="card"><h3>Kaushambi</h3><p>Contact us to discuss appliance inspection and maintenance.</p></article>
+    <article class="card">
+      <h3>Indirapuram</h3>
+      <p>Enquire about chimney cleaning, repair and hob troubleshooting for your Indirapuram location.</p>
+    </article>
+    <article class="card">
+      <h3>Vaishali</h3>
+      <p>Share your appliance model and issue to discuss service options in Vaishali.</p>
+    </article>
+    <article class="card">
+      <h3>Vasundhara</h3>
+      <p>Ask about kitchen chimney and hob service availability in Vasundhara.</p>
+    </article>
+    <article class="card">
+      <h3>Raj Nagar Extension</h3>
+      <p>Describe your appliance problem and enquire about options in Raj Nagar Extension.</p>
+    </article>
+    <article class="card">
+      <h3>Crossings Republik</h3>
+      <p>Contact us to discuss appliance maintenance or repair enquiries in Crossings Republik.</p>
+    </article>
+    <article class="card">
+      <h3>Kaushambi</h3>
+      <p>Enquire about chimney and hob service options for your Kaushambi address.</p>
+    </article>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="content-section" id="faq">
-  <div class="section-title"><h2>Frequently Asked Questions</h2></div>
+  <div class="section-title">
+    <h2>Frequently Asked Questions</h2>
+    <p>Helpful information before making a service enquiry.</p>
+  </div>
 
   <div class="faq">
     <details>
-      <summary>Do you provide Hafele chimney repair in Ghaziabad?</summary>
-      <p>You can enquire about independent repair assistance by sharing your appliance model, symptoms and location.</p>
+      <summary>Can I enquire about Hafele chimney repair in Ghaziabad?</summary>
+      <p>Yes. Share your model, location and the symptoms you have noticed to enquire about independent service options.</p>
     </details>
 
     <details>
       <summary>Are you an authorised Hafele service centre?</summary>
-      <p>No. We are an independent service provider and are not affiliated with or authorised by Hafele.</p>
+      <p>No. This is an independent service provider and is not affiliated with or authorised by Hafele.</p>
     </details>
 
     <details>
-      <summary>Can I enquire about chimney cleaning?</summary>
-      <p>Yes. Contact us with your model and cleaning requirements. Available work depends on the appliance and its condition.</p>
+      <summary>Can I ask about chimney cleaning?</summary>
+      <p>Yes. Explain your chimney type and cleaning needs. The suitable work depends on the model and its condition.</p>
     </details>
 
     <details>
-      <summary>Do you offer a warranty?</summary>
-      <p>Any applicable warranty depends on the specific work and parts involved. Confirm the terms in writing before approving the job.</p>
+      <summary>Can I enquire about hob problems?</summary>
+      <p>You can describe the issue and appliance details. Gas and electrical repairs should be assessed by a suitably qualified professional.</p>
     </details>
 
     <details>
-      <summary>How can I enquire about charges?</summary>
-      <p>Call us with your location, appliance model and problem. Confirm applicable inspection and repair charges before work starts.</p>
+      <summary>Do you provide a parts warranty?</summary>
+      <p>Warranty terms depend on the specific parts and work offered. Confirm the coverage, exclusions and duration in writing before approving the job.</p>
+    </details>
+
+    <details>
+      <summary>How do I find out the service charges?</summary>
+      <p>Call with your locality, appliance model and symptoms. Confirm visit, inspection, labour and parts charges before work begins.</p>
+    </details>
+
+    <details>
+      <summary>Does the Book Now form automatically save my booking?</summary>
+      <p>No. This version prepares an SMS enquiry on your device. You must review and send the SMS. Automatic online booking storage requires a booking backend or form service.</p>
     </details>
   </div>
 </section>
@@ -342,18 +587,21 @@ footer a{color:#fbbf24}
 
 <!-- FOOTER -->
 <footer>
-  <h2>HafeleCare Ghaziabad</h2>
-  <p>Kitchen chimney and hob service enquiries</p>
+  <h2><span style="color:#f87171">Hafele</span>Care Ghaziabad</h2>
+  <p>Independent kitchen chimney and hob service enquiries</p>
   <p>Phone: <a href="tel:8796284796">8796284796</a></p>
-  <p>Location served: Ghaziabad, Uttar Pradesh</p>
+  <p>Service area: Ghaziabad, Uttar Pradesh</p>
   <p><a href="/privacy-policy.html">Privacy Policy</a></p>
-  <p>Independent service provider. Not an authorised Hafele service centre and not affiliated with Hafele.</p>
+  <p>
+    Independent service provider. Not an authorised Hafele service centre
+    and not affiliated with Hafele.
+  </p>
   <p>© <span id="year"></span> HafeleCare Ghaziabad</p>
 </footer>
 
-<!-- STICKY BOOK NOW AND CALL NOW; NO WHATSAPP -->
-<div class="sticky-actions">
-  <a class="sticky-book" href="#booking">BOOK NOW</a>
+<!-- STICKY BUTTONS: NO WHATSAPP -->
+<div class="sticky-actions" aria-label="Quick contact">
+  <a class="sticky-book" href="#booking">▣ BOOK NOW</a>
   <a class="sticky-call" href="tel:8796284796">☎ CALL NOW</a>
 </div>
 
@@ -377,7 +625,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
   }
 
   const message =
-    "Service Booking Enquiry - Ghaziabad\n" +
+    "Service Enquiry - Ghaziabad\n" +
     "Name: " + name + "\n" +
     "Customer Phone: " + phone + "\n" +
     "Appliance: " + appliance + "\n" +
@@ -386,11 +634,11 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
     "Problem: " + (problem || "Not specified");
 
   formMessage.textContent =
-    "Opening your SMS app. Please review and send the enquiry to complete the request.";
+    "Opening your SMS app. Please review the details and send the message to complete your enquiry.";
 
-  window.location.href = "sms:8796284796?body=" + encodeURIComponent(message);
+  window.location.href =
+    "sms:8796284796?body=" + encodeURIComponent(message);
 });
 </script>
-
 </body>
 </html>
