@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Chimney Service Ghaziabad | Faber Hafele Elica</title>
+<style>
+body{margin:0;font-family:system-ui;background:#f8fafc}
+.card{max-width:850px;margin:20px auto;background:white;padding:22px;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+h1{font-size:26px;margin:0 0 8px} h2{margin-top:28px;font-size:20px}
+p{line-height:1.6;color:#334155} .phone{color:green;font-weight:bold;font-size:18px}
+.form{border:2px solid #0f172a;padding:20px;border-radius:14px;margin-top:30px;background:#f8fafc}
+input{width:100%;padding:12px;margin-top:10px;border-radius:8px;border:1px solid #ccc;box-sizing:border-box}
+.btn{display:block;width:100%;padding:14px;margin-top:14px;background:#0f172a;color:white;border-radius:8px;text-align:center;text-decoration:none;font-weight:bold}
+.small{font-size:11px;color:#64748b;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="card" id="app"></div>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const b = (urlParams.get('brand') || 'faber').toLowerCase();
+const BrandName = b.charAt(0).toUpperCase() + b.slice(1);
+
+const data = {
+  faber: {
+    h1:"Faber Chimney Service in Ghaziabad",
+    why:"Faber chimney ke liye 10+ years expert team, same day service in Vaishali, Indirapuram, Vasundhara.",
+    service:"Faber deep cleaning, motor repair, suction issue, filter change - sab genuine process se hota hai.",
+    issues:"Common Faber Issues: auto cut off, noise, oil leakage, no suction - permanent fix dete hain.",
+    areas:"Vaishali, Indirapuram, Vasundhara, Raj Nagar, Kaushambi, Crossings Republik"
+  },
+  hafele: {
+    h1:"Hafele Chimney Service in Ghaziabad",
+    why:"Hafele premium chimney specialist, trained technicians, 90 days warranty.",
+    service:"Hafele cleaning, PCB repair, oil collector, suction motor, touch panel - full service.",
+    issues:"Hafele PCB fault, touch not working, heavy noise - expert solution.",
+    areas:"Full Ghaziabad - Vaishali to Raj Nagar"
+  },
+  elica: {
+    h1:"Elica Chimney Service in Ghaziabad - 12 Services",
+    why:"Elica 12+ Services at one place, Ghaziabad coverage, genuine parts.",
+    service:"Elica 12 Services: 1.Cleaning 2.Motor 3.Filter 4.PCB 5.Suction 6.Noise 7.Oil Leakage 8.Installation 9.Duct 10.Touch Panel 11.Wiring 12.General Service - Har service ka alag description.",
+    issues:"Elica ke sabhi 12 issues ka solution - low suction, grease jam, auto off sab fix.",
+    areas:"Vaishali, Indirapuram, Kaushambi, Vasundhara, Raj Nagar, Crossing"
+  },
+  aria: {
+    h1:"Aria Anthem Chimney Service in Ghaziabad",
+    why:"Aria Anthem builder series chimney expert - Google Ad leads ke liye same page.",
+    service:"Aria Anthem chimney cleaning & repair - fast service, same day.",
+    issues:"Aria low suction, grease jam - instant fix.",
+    areas:"Ghaziabad Full"
+  }
+};
+
+const curr = data[b] || data.faber;
+
+document.getElementById('app').innerHTML = `
+  <h1>${curr.h1}</h1>
+  <div class="phone">📞 8796284796 — Call Now — Ghaziabad</div>
+
+  <h2>Why Choose ${BrandName} Service?</h2>
+  <p>${curr.why}</p>
+
+  <h2>${BrandName} Repair & Cleaning Details</h2>
+  <p>${curr.service}</p>
+
+  <h2>Common ${BrandName} Issues We Fix</h2>
+  <p>${curr.issues}</p>
+
+  <h2>Service Process</h2>
+  <p>1. Call Booking 2. Technician Visit 3. Check & Quote 4. Repair & Testing — 90 Days Warranty</p>
+
+  <h2>Service Areas in Ghaziabad</h2>
+  <p>${curr.areas}</p>
+
+  <div class="form">
+    <h3 style="margin:0 0 10px">Book ${BrandName} Service — Dynamic Form</h3>
+    <input id="name" placeholder="Your Name">
+    <input id="phone" placeholder="Mobile Number">
+    <input id="area" placeholder="Area - Vaishali / Indirapuram">
+    <input value="${BrandName}" readonly style="background:#e2e8f0;font-weight:bold">
+    <a class="btn" href="tel:8796284796">📞 Book ${BrandName} — 8796284796</a>
+    <div class="small">Independent Service Provider. Not Authorized ${BrandName}. Brand names for identification only. Noindex — Google Ad Safe. Official: ${BrandName}</div>
+  </div>
+`;
+</script>
+</body>
+</html>
