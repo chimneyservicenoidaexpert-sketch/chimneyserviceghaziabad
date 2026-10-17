@@ -50,9 +50,7 @@ body{background:#f8fafc;color:#1e293b}
 .content .highlight{background:#fff7ed;border:1px solid #ffedd5;border-radius:10px;padding:14px;margin:14px 0}
 .hob-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
 @media(max-width:700px){.hob-grid{grid-template-columns:1fr}}
-.hob-card{background:#fff;border:1px solid #eef2f7;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)}
-.hob-card img{width:100%;height:210px;object-fit:cover}
-.hob-card .hob-info{padding:14px}
+.hob-card{background:#f8fafc;border:1px solid #eef2f7;border-radius:12px;padding:14px}
 .map-box{margin-top:18px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid #eef2f7;box-shadow:0 4px 20px rgba(0,0,0,.05)}
 .map-head{padding:14px 16px;background:#0b1a30;color:#fff;display:flex;justify-content:space-between;align-items:center}
 .map-box iframe{width:100%;height:300px;border:0;display:block}
@@ -64,7 +62,6 @@ body{background:#f8fafc;color:#1e293b}
 .modal{display:none;position:fixed;inset:0;background:rgba(15,23,42,.75);backdrop-filter:blur(6px);z-index:100;place-items:center;padding:14px}.modal.active{display:grid}
 .modal-box{background:#fff;border-radius:16px;padding:18px;max-width:400px;width:100%;position:relative}
 .close{position:absolute;right:12px;top:8px;font-size:22px;cursor:pointer;color:#94a3b8}
-/* CALL POPUP */
 .call-popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;place-items:center;padding:16px}.call-popup.active{display:grid}
 .call-popup-box{background:#fff;border-radius:18px;padding:22px;max-width:360px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3);animation:pop .4s}
 @keyframes pop{0%{transform:scale(.8);opacity:0}100%{transform:scale(1);opacity:1}}
@@ -122,37 +119,30 @@ body{background:#f8fafc;color:#1e293b}
 </div>
 
 <div class="booking">
-<div class="booking-head"><h2>Book Hafele Service in 30 Sec</h2><p>Fill details → Direct WhatsApp booking</p></div>
+<div class="booking-head"><h2>Book Hafele Service in 30 Sec</h2><p>Fill details → Direct booking</p></div>
 <div class="field"><label>Full Name *</label><input id="name" placeholder="Ex: Rahul Sharma"></div>
 <div class="field"><label>Mobile Number *</label><input id="mobile" placeholder="10-digit number"></div>
 <div class="field"><label>Full Address *</label><textarea id="address" placeholder="House No, Street, Area - Ghaziabad" rows="2"></textarea></div>
 <div class="field"><label>Select Hafele Service *</label><select id="service"><option value="">Choose Service</option><option>Deep Cleaning Service</option><option>Basic Service</option><option>Noise Issue Fix</option><option>Chimney Not Working</option><option>Oil Leakage Fix</option><option>Low Suction Fix</option><option>Motor Repair</option><option>PCB / Touch Repair</option><option>Filter / Duct Cleaning</option><option>Installation / Reinstallation</option><option>Gas Stove / Hob Cleaning</option><option>Gas Stove / Hob Repair</option><option>Full Combo Service</option></select></div>
-<button class="submit" onclick="sendWA('main')">📲 Book on WhatsApp - Hafele Care</button>
+<button class="submit" onclick="sendWA('main')">📅 Book Now - Hafele Care</button>
 </div>
 
-<!-- GAS STOVE PHOTOS + DESCRIPTION - 100 WORDS -->
+<!-- GAS STOVE SECTION - PHOTO HATA DI, SIRF TEXT -->
 <div class="content">
 <h2 style="border-left-color:#ff3b3b">Hafele Gas Stove & Hob Cleaning and Repair in Ghaziabad</h2>
 <div class="hob-grid">
 <div class="hob-card">
-<img src="https://images.unsplash.com/photo-1606788075761-5d9a2b5b3a5b?q=80&w=800" alt="Hafele Gas Hob">
-<img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800" alt="Hafele Hob" style="display:none" onerror="this.previousElementSibling.src='https://images.unsplash.com/photo-1585515656627-1a4d53d1c1e9?q=80&w=800'">
-<div class="hob-info">
 <h3>Hafele Gas Hob Cleaning Service - 4 Burner Black Glass</h3>
 <p>Hafele gas hob and hybrid hobs are designed with toughened black glass, heavy-duty cast iron supports and precision burners to complement modern kitchens. Over time, oil spills, curry residues, dust and daily cooking can clog burner holes, stain the glass and reduce flame efficiency. Our independent Hafele hob cleaning service in Ghaziabad includes deep degreasing of burner caps, thorough cleaning of pan supports, careful removal of food residue from glass surface, inspection of ignition pins and thorough check of gas flow holes. We use non-abrasive, hob-safe cleaners to protect the black glass finish and ensure no damage to ignition system. Regular cleaning not only restores shine but also helps maintain uniform blue flame, reduces gas wastage and prevents foul smell during cooking. Service is available for 2, 3, 4 burner Hafele hobs across Vaishali, Indirapuram, Vasundhara, Raj Nagar and full Ghaziabad. We do not dismantle internal gas manifold unless required and assessed. Our technicians explain cleaning process and provide maintenance tips for long-term shine and performance.</p>
 </div>
-</div>
 <div class="hob-card">
-<img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800" alt="Gas Stove Repair">
-<div class="hob-info">
 <h3>Hafele Gas Stove Repair and Maintenance</h3>
 <p>Hafele gas stoves and built-in hobs may develop issues like low flame, yellow flame, one side burner not igniting, auto-ignition failure, gas leakage smell, knob jam or burner not staying on. These problems can arise due to blocked burner jets, faulty spark plug, damaged ignition wiring, worn-out knobs, dust in gas pipe or improper installation. Our independent technician in Ghaziabad inspects the hob model, checks burner assembly, tests ignition continuity, inspects gas inlet and outlet, examines knob operation and explains repair options clearly before work. We focus on safe diagnosis, compatible component replacement where available and proper fitting to ensure stable flame and safe operation. Do not attempt to open gas line without technical knowledge. If you smell strong gas, close supply and ventilate area. We provide transparent estimate, no hidden charges and practical maintenance tips for long-term hob care. Our aim is to provide safe, practical and suitable repair solutions for Hafele gas hobs and stoves in residential kitchens.</p>
 </div>
 </div>
 </div>
-</div>
 
-<!-- PURA CONTENT - TUNE JO BHEJA THA WOHI -->
+<!-- PURA CONTENT -->
 <div class="content">
 <h1>Hafele Chimney Service, Repair, Installation and Cleaning in Ghaziabad</h1>
 <h2>Professional Hafele Kitchen Chimney Care in Ghaziabad</h2>
@@ -161,129 +151,58 @@ body{background:#f8fafc;color:#1e293b}
 <p>Whether your Hafele chimney has weak suction, unusual noise, a motor problem, an unresponsive touch panel, a lighting fault or a cleaning requirement, our technician can inspect the appliance and explain the available repair options.</p>
 <h2>Our Services Include:</h2>
 <ul><li>Hafele kitchen chimney repair</li><li>Hafele chimney installation and reinstallation</li><li>Hafele chimney deep cleaning</li><li>Motor inspection and repair</li><li>Suction and airflow problem diagnosis</li><li>Chimney noise and vibration troubleshooting</li><li>Filter and grease accumulation cleaning</li><li>Touch control and gesture control diagnosis</li><li>Electrical connection inspection</li><li>LED light and switch troubleshooting</li><li>Auto-clean function inspection</li><li>Chimney maintenance and performance checks</li><li>Compatible spare-parts replacement, where available</li><li>Hafele hob and chimney setup assistance</li></ul>
-<p>We focus on clear communication, practical troubleshooting and suitable repair solutions for residential kitchens in Ghaziabad.</p>
 <h2>About Hafele Kitchen Chimneys</h2>
-<p>Häfele is a well-known kitchen and home solutions brand offering kitchen appliances, fittings and ventilation products. Its cookerhood range includes designs created to complement modern kitchens while helping remove cooking fumes, grease and odours. Depending on the model, Hafele kitchen chimneys may feature filter-free technology, touch controls, gesture controls, automatic cleaning functions, LED lighting, multiple speed settings and different motor technologies. The features of each appliance depend on its exact model, product generation and specifications. Therefore, identifying the correct model before carrying out a repair is important. Our independent service assistance is intended to help customers understand chimney faults, arrange suitable inspections and maintain their appliances.</p>
+<p>Häfele is a well-known kitchen and home solutions brand offering kitchen appliances, fittings and ventilation products. Its cookerhood range includes designs created to complement modern kitchens while helping remove cooking fumes, grease and odours. Depending on the model, Hafele kitchen chimneys may feature filter-free technology, touch controls, gesture controls, automatic cleaning functions, LED lighting, multiple speed settings and different motor technologies. The features of each appliance depend on its exact model, product generation and specifications. Therefore, identifying the correct model before carrying out a repair is important.</p>
 <h2>Hafele Chimney Models and Product Series</h2>
-<p>Hafele has offered multiple cookerhood models and designs. The following sections describe notable model families and product types. Model availability, specifications and spare-parts compatibility should be confirmed against the appliance's product label and current manufacturer documentation.</p>
 <h3>1. Hafele Kallisto Series Chimney Service</h3>
-<p>The Hafele Kallisto series includes contemporary cookerhood designs in inclined and T-shaped configurations. Selected variants feature filter-free technology, touch and gesture controls, smart auto-clean functions and different motor options. Depending on the variant, the series may include a Duracoil AC motor or an Ecoflux BLDC motor. Selected models offer multiple speed settings and a Turbo Boost function for demanding cooking conditions.</p>
-<p><b>Kallisto chimney service requirements may include:</b></p>
+<p>The Hafele Kallisto series includes contemporary cookerhood designs in inclined and T-shaped configurations. Selected variants feature filter-free technology, touch and gesture controls, smart auto-clean functions and different motor options. Depending on the variant, the series may include a Duracoil AC motor or an Ecoflux BLDC motor. Selected models offer multiple speed settings and a Turbo Boost function.</p>
 <ul><li>Motor and fan inspection</li><li>Airflow and suction performance testing</li><li>Gesture control troubleshooting</li><li>Touch panel inspection</li><li>Smart auto-clean function checks</li><li>LED lighting diagnosis</li><li>Unusual noise and vibration checks</li><li>Electrical connection inspection</li><li>Cleaning of accessible grease-prone areas</li><li>Compatible component replacement where necessary</li></ul>
-<p>If a Kallisto chimney is operating noisily or extracting smoke poorly, the technician should check the installation, air outlet, fan assembly and other relevant components before recommending a repair.</p>
 <h3>2. Hafele Leo Series Chimney Service</h3>
-<p>The Hafele Leo series includes wall-mounted cookerhood options, including filter-free designs. Depending on the variant, features may include a black finish, feather-touch controls, LED lighting and different extraction capacities. Leo models can have different specifications, so the exact model should be identified before servicing.</p>
-<p><b>Common Leo chimney service requests include:</b></p>
-<ul><li>Low suction performance</li><li>Chimney not switching on</li><li>Touch control problems</li><li>LED light failure</li><li>Fan noise or vibration</li><li>Airflow obstruction</li><li>Electrical connection issues</li><li>Cleaning and preventive maintenance</li></ul>
-<p>For a Leo chimney with poor extraction, the air outlet, installation arrangement, fan operation and any relevant obstruction should be checked before replacing components.</p>
+<p>The Hafele Leo series includes wall-mounted cookerhood options, including filter-free designs. Common requests include low suction, not switching on, touch control problems, LED failure, fan noise, airflow obstruction, electrical issues and preventive maintenance.</p>
 <h3>3. Hafele Datura Series Chimney Service</h3>
-<p>The Hafele Datura range includes T-shaped wall-mounted cookerhood designs. Certain variants feature filter-free technology, while other variants use metal filters and anti-drip oil management systems. The Datura Neo and Datura Plus variants have different configurations. Their cleaning requirements and components should not be assumed to be identical.</p>
-<p><b>Datura chimney service may cover:</b></p>
-<ul><li>Motor and fan inspection</li><li>Auto-open smoke panel troubleshooting, where fitted</li><li>Touch controls and display checks</li><li>Timer function inspection</li><li>Metal filter cleaning, where applicable</li><li>Oil collector inspection, where fitted</li><li>LED light troubleshooting</li><li>Suction and airflow checks</li><li>Grease accumulation cleaning</li><li>Noise and vibration diagnosis</li></ul>
-<p>For models with an anti-drip system, the oil management components should be inspected and maintained according to the applicable product instructions.</p>
-<h3>4. Hafele Teresa Series Chimney Service</h3>
-<p>Teresa is a model family listed in Hafele's earlier cookerhood range. Different versions have been offered with different configurations and features. Before arranging Teresa chimney repair, the model label should be checked to identify the correct controls, motor arrangement and cleaning system. Potential service requirements include suction inspection, fan troubleshooting, lighting repair, cleaning, control diagnosis and compatible component replacement.</p>
-<h3>5. Hafele Tiara Series Chimney Service</h3>
-<p>Tiara models have appeared in Hafele's earlier filter-free cookerhood range. Particular versions may have different motor and smoke-management features. Service requirements depend on the specific variant. Our independent inspection can help identify airflow problems, control faults, unusual sounds and cleaning needs.</p>
-<h3>6. Hafele Tisca Series Chimney Service</h3>
-<p>Tisca is another model name found in Hafele's earlier cookerhood catalogue. Customers should confirm the exact model and its current spare-parts availability before booking a repair. Our service assistance can include installation checks, motor diagnosis, suction troubleshooting, cleaning and electrical fault inspection where compatible with the appliance.</p>
-<h3>7. Hafele Ivaraa Series Chimney Service</h3>
-<p>Ivaraa models have appeared in Hafele's earlier wall-mounted filter-free cookerhood range, including different sizes. Possible service requirements include checking the fan, controls, lighting, airflow path and relevant electrical components. The precise cleaning procedure depends on the model.</p>
-<h3>8. Hafele Linea Series Chimney Service</h3>
-<p>Linea models have appeared in Hafele's cookerhood range with BLDC motor configurations. Motor technology and electrical components can differ from those in conventional AC-motor models. Inspection should establish the correct motor type before any repair is attempted. Troubleshooting may include control faults, airflow issues, unusual noise and electrical problems.</p>
-<h3>9. Other Hafele Cookerhood Models</h3>
-<p>Hafele has offered additional cookerhood designs across different product generations, sizes and configurations. An older model may have different parts, controls or cleaning requirements from a newer model. If your model is not listed above, share its model name or product-label details when booking. We can assess the service requirement and check whether suitable repair options and compatible parts are available.</p>
+<p>The Hafele Datura range includes T-shaped wall-mounted designs with filter-free and metal filter anti-drip systems. Datura Neo and Plus variants have different configurations. Service covers motor, auto-open panel, touch controls, timer, metal filter cleaning, oil collector, LED, suction, grease cleaning, noise diagnosis.</p>
+<h3>4-8. Teresa, Tiara, Tisca, Ivaraa, Linea Series</h3>
+<p>Earlier ranges with different motor, filter and control configurations. Model label should be checked. Service covers suction, fan, lighting, cleaning, control diagnosis and compatible part replacement. Linea models have BLDC motor.</p>
 <h2>Hafele Chimney Types We Service</h2>
-<h3>Wall-Mounted Kitchen Chimneys</h3>
-<p>Wall-mounted chimneys are installed against a kitchen wall above the cooking area. Their performance depends on suitable positioning, correct installation and an effective airflow route. Service may include checking mounting stability, duct connections, fan performance, lighting, controls and grease accumulation.</p>
-<h3>Inclined Kitchen Chimneys</h3>
-<p>Inclined chimneys have a sloping front design that can provide more clearance around the cooking area. Some Hafele models include touch controls, gesture controls or an automatic opening panel. Repair work may involve checking the opening mechanism, controls, fan, lighting and airflow.</p>
-<h3>T-Shaped Kitchen Chimneys</h3>
-<p>T-shaped chimneys have a horizontal canopy and a vertical chimney cover. Their service requirements depend on the motor, filters, controls and cleaning system fitted to the particular model.</p>
-<h3>Filter-Free Kitchen Chimneys</h3>
-<p>Filter-free designs use a different approach to handling grease and airflow from conventional removable-filter models. Filter-free does not mean that every part of the appliance is maintenance-free. Accessible grease-prone areas, the fan assembly and any oil collection components should be maintained according to the manufacturer's instructions.</p>
-<h3>Auto-Clean Kitchen Chimneys</h3>
-<p>Certain Hafele models include automatic or smart cleaning functions. The exact mechanism and activation method depend on the model. If the auto-clean function is not operating properly, the technician should inspect the relevant controls and components rather than assume that every model uses the same cleaning mechanism.</p>
-<h3>AC-Motor and BLDC-Motor Chimneys</h3>
-<p>Hafele has offered cookerhoods with different motor technologies, including AC and BLDC options. A motor fault must be diagnosed according to the fitted motor and control system. Compatible replacement parts should be selected using the correct model information.</p>
+<p><b>Wall-Mounted, Inclined, T-Shaped, Filter-Free, Auto-Clean, AC-Motor & BLDC-Motor</b> - All types depend on positioning, mounting and airflow route. Filter-free does not mean maintenance-free. Auto-clean mechanism depends on model.</p>
 <h2>Hafele Chimney Repair Services in Ghaziabad</h2>
-<h3>Hafele Chimney Motor Repair</h3>
-<p>The motor helps drive the fan that extracts smoke and cooking fumes. A motor problem can cause weak suction, unusual sounds or complete failure to operate. Our motor repair service begins with an inspection of the fan, electrical supply, controls and relevant motor components. Where repair is not practical, a compatible replacement may be recommended after confirming availability.</p>
-<h3>Hafele Chimney Not Starting</h3>
-<p>If your chimney does not switch on, the cause may involve the power supply, switch, touch panel, wiring, motor or electronic control system. A technician can inspect the appliance and identify the likely source of the problem before suggesting the next step.</p>
-<h3>Hafele Chimney Low Suction Repair</h3>
-<p>Weak suction can result from grease accumulation, an obstructed outlet, an unsuitable duct arrangement, a fan problem or another internal fault. Our troubleshooting process focuses on identifying the reason for reduced airflow rather than immediately recommending a motor replacement.</p>
-<h3>Hafele Chimney Noise Repair</h3>
-<p>Unusual humming, rattling, vibration or grinding sounds may indicate loose mounting, contact with another component, fan imbalance or a motor-related problem. The appliance should be inspected before continued operation if the noise is sudden, severe or accompanied by a burning smell.</p>
-<h3>Hafele Chimney Touch Panel Repair</h3>
-<p>A touch panel may stop responding because of a control issue, moisture or grease contamination, a connection fault or an electronic component problem. The appropriate solution depends on the diagnosis and the availability of compatible parts.</p>
-<h3>Hafele Chimney Gesture Control Repair</h3>
-<p>Some models use gesture control to switch the appliance on or off or change its speed. If this feature stops responding, the sensor area, controls and relevant connections may need inspection. Not every Hafele chimney has gesture control, so this service applies only to compatible models.</p>
-<h3>Hafele Chimney Auto-Clean Repair</h3>
-<p>If the auto-clean feature does not activate or complete its intended cycle, the cause may involve the controls or the cleaning mechanism fitted to that model. Our service approach is to identify the exact model and follow its applicable maintenance and troubleshooting instructions.</p>
-<h3>Hafele Chimney LED Light Repair</h3>
-<p>LED lighting helps illuminate the cooking surface. If the lights stop working or flicker, the issue may be related to the light assembly, connection or electrical control. A technician can assess the fault and advise whether repair or replacement is appropriate.</p>
-<h3>Hafele Chimney Switch and Electrical Repair</h3>
-<p>A faulty switch, damaged connection or control issue can affect normal operation. Electrical troubleshooting should be performed safely by a qualified technician. If the appliance trips the circuit, smells burnt or produces sparks, switch off the power where safe and arrange a professional inspection.</p>
-<h3>Hafele Chimney Installation Correction</h3>
-<p>Incorrect mounting, poor duct routing or unsuitable positioning can affect extraction and create noise or vibration. An installation inspection can help identify mounting and airflow problems. Any changes should be compatible with the appliance specifications and the kitchen layout.</p>
+<p><b>Motor Repair, Not Starting, Low Suction, Noise, Touch Panel, Gesture Control, Auto-Clean, LED Light, Switch & Electrical, Installation Correction</b> - Complete diagnosis before part replacement, safe electrical work.</p>
 <h2>Hafele Chimney Deep Cleaning Service</h2>
-<p>Regular cleaning helps manage accumulated grease and maintain the chimney's ventilation performance. The cleaning method should match the chimney design.</p>
-<p><b>Our deep-cleaning service may include:</b></p>
-<ul><li>Inspection of the exterior and accessible interior areas</li><li>Cleaning of removable filters, where fitted</li><li>Cleaning of accessible grease deposits</li><li>Inspection of the oil collector, where applicable</li><li>Cleaning of accessible control and panel surfaces</li><li>Checking the fan area where safely accessible</li><li>Inspection of the air outlet and duct connection</li><li>Basic operational checks after cleaning</li></ul>
-<p>Filter-free chimneys should not automatically be treated like conventional baffle-filter chimneys. Components should only be removed and cleaned according to the model's instructions. The service does not include dismantling every internal component unless the work has been assessed and agreed beforehand.</p>
-<h2>Hafele Chimney Filter Cleaning and Blockage</h2>
-<p>Grease and residue can accumulate in filters and other areas of the airflow path. This may affect extraction and create a persistent cooking smell. For models with removable filters, the filter type should be identified before cleaning. Filter-free models require the appropriate maintenance procedure for their design. Do not pour water into the motor, control panel or electrical compartment. Electrical components must remain protected during cleaning.</p>
+<ul><li>Exterior and interior inspection</li><li>Removable filter cleaning</li><li>Grease deposit cleaning</li><li>Oil collector inspection</li><li>Control panel cleaning</li><li>Fan area check</li><li>Air outlet and duct inspection</li><li>Operational checks after cleaning</li></ul>
 <h2>Hafele Chimney Installation in Ghaziabad</h2>
-<p>Correct installation helps a kitchen chimney perform as intended. The appliance should be positioned and mounted according to the manufacturer's instructions and the cooking arrangement.</p>
-<p><b>Our installation assistance may include:</b></p>
-<ul><li>Checking the chimney model and dimensions</li><li>Assessing the intended mounting position</li><li>Checking the distance from the hob against manufacturer guidance</li><li>Inspecting the available power connection</li><li>Assessing the duct or outlet arrangement</li><li>Mounting and alignment checks</li><li>Control and lighting checks</li><li>Basic operation testing</li><li>Explaining routine maintenance requirements</li></ul>
-<p>New installations, relocation and reinstallation may require different work. Any additional ducting, electrical work, civil work or spare parts should be discussed before the service begins.</p>
+<ul><li>Model and dimensions checking</li><li>Mounting position assessment</li><li>Distance from hob checking</li><li>Power connection inspection</li><li>Duct arrangement assessment</li><li>Mounting and alignment</li><li>Control and lighting checks</li><li>Operation testing</li><li>Maintenance explaining</li></ul>
 <h2>Hafele Chimney Maintenance Advice</h2>
-<ul><li>Clean the exterior with a suitable, non-abrasive cleaner.</li><li>Clean removable filters at intervals appropriate for your cooking habits and the product instructions.</li><li>Keep the control panel free from excessive grease and moisture.</li><li>Check for unusual noise or vibration during operation.</li><li>Keep the air outlet clear and ensure the duct is not obstructed.</li><li>Use the auto-clean function only as instructed for the specific model.</li><li>Arrange an inspection if suction decreases noticeably.</li><li>Avoid opening electrical or motor compartments without appropriate technical knowledge.</li><li>Use compatible spare parts for any replacement.</li><li>Keep the model number and product documentation available for service visits.</li></ul>
-<p>The required maintenance interval depends on cooking frequency, oil usage, installation conditions and the chimney design.</p>
-<h2>Hafele Hob and Chimney Care</h2>
-<p>A hob and chimney work together to support the cooking area. Their dimensions, positioning and installation should be suitable for one another. We can provide independent assistance with chimney installation and discuss the setup around a Hafele hob. Any hob-related repair or installation should be assessed separately according to its appliance type and requirements. For a combined hob and chimney service enquiry, provide the model details of both appliances so the work can be assessed accurately.</p>
-<h2>Hafele Chimney Spare Parts</h2>
-<p>The correct spare part depends on the appliance's exact model, product generation and component specifications.</p>
-<p><b>Potential replacement items may include:</b></p>
-<ul><li>Motor assemblies</li><li>Fan components</li><li>Control panels</li><li>Switches and buttons</li><li>LED light assemblies</li><li>Compatible filters</li><li>Oil collectors</li><li>Sensors and control components</li><li>Relevant wiring or connectors</li></ul>
-<p>Not every part is available for every model. Compatibility and availability should be confirmed before a replacement is promised or ordered.</p>
-<h2>Independent Hafele Chimney Service in Ghaziabad</h2>
-<p>We provide independent chimney repair and maintenance assistance for customers who need help with their Hafele kitchen appliances. We are not claiming to be Hafele's authorised service centre or an official brand representative. Our services are independently arranged and are subject to technician availability, model compatibility and the nature of the fault. Manufacturer warranty coverage, if applicable, should be checked with Hafele or the relevant seller before authorising third-party repairs. Independent repairs may affect warranty coverage under the applicable terms. Customers can ask for the estimated service charges, expected work and any applicable part warranty before approving a repair. Any warranty offered on replacement parts or workmanship should be confirmed in writing for the specific job.</p>
+<ul><li>Clean exterior with non-abrasive cleaner</li><li>Clean filters as per habits</li><li>Keep panel free from grease & moisture</li><li>Check for unusual noise</li><li>Keep air outlet clear</li><li>Use auto-clean as instructed</li><li>Inspection if suction decreases</li><li>Avoid opening motor compartments</li><li>Use compatible parts</li><li>Keep model number ready</li></ul>
 <h2>Hafele Chimney Service Areas in Ghaziabad</h2>
-<p>We accept enquiries for independent Hafele chimney service in Ghaziabad, subject to location and technician availability. Areas include: Raj Nagar, Raj Nagar Extension, Indirapuram, Vaishali, Vasundhara, Kaushambi, Crossings Republik, Siddharth Vihar, Govindpuram, Kavi Nagar, Shastri Nagar, Sanjay Nagar, Nehru Nagar, Patel Nagar, Vijay Nagar, Pratap Vihar, Wave City, NH-24 residential areas, Modinagar, Muradnagar, Loni, Sahibabad, Mohan Nagar, Arthala, Shalimar Garden, Rajendra Nagar, Shakti Khand, Ahinsa Khand, Shipra Suncity, Niti Khand, Gyan Khand, Nyay Khand, Abhay Khand, Ramprastha, Surya Nagar, Chander Nagar, Brij Vihar, DLF Ankur Vihar, Dasna, Duhai, Hapur Road residential areas. Please confirm your exact locality when booking so that service availability can be checked. Listing an area does not guarantee that a technician is available for every address or on every date.</p>
+<p>Raj Nagar, Raj Nagar Extension, Indirapuram, Vaishali, Vasundhara, Kaushambi, Crossings Republik, Siddharth Vihar, Govindpuram, Kavi Nagar, Shastri Nagar, Sanjay Nagar, Nehru Nagar, Patel Nagar, Vijay Nagar, Pratap Vihar, Wave City, NH-24, Modinagar, Muradnagar, Loni, Sahibabad, Mohan Nagar, Arthala, Shalimar Garden, Rajendra Nagar, Shakti Khand, Ahinsa Khand, Shipra Suncity, Niti Khand, Gyan Khand, Nyay Khand, Abhay Khand, Ramprastha, Surya Nagar, Chander Nagar, Brij Vihar, DLF Ankur Vihar, Dasna, Duhai, Hapur Road.</p>
 <h2>Why Choose Our Independent Hafele Chimney Service?</h2>
-<ul><li><b>Model-Based Troubleshooting:</b> We aim to identify the appliance model and understand the fault before recommending repair work.</li><li><b>Clear Communication:</b> Customers can ask what needs attention, why the repair is recommended and whether additional parts may be required.</li><li><b>Suitable Repair Options:</b> Repair recommendations depend on the condition of the appliance, technical feasibility and availability of compatible parts.</li><li><b>Cleaning and Maintenance Support:</b> We provide assistance with appropriate cleaning and maintenance requirements for different chimney designs.</li><li><b>Local Service Enquiries:</b> Customers across Ghaziabad can contact us to discuss the problem, location and available appointment options.</li><li><b>Transparent Estimates:</b> The estimated cost and scope of work should be discussed before repair approval. Final charges may depend on the diagnosis, parts and work required.</li><li><b>Part Warranty Information:</b> Where a replacement part or repair carries a warranty, the applicable coverage, exclusions and duration should be confirmed before the work is approved.</li></ul>
-<h2>Hafele Chimney Service Booking Process</h2>
-<p><b>Step 1: Contact Us</b> - Call 8796284796 to discuss your Hafele chimney service requirement.<br><b>Step 2: Explain the Problem</b> - Tell us whether the chimney is not starting, making noise, extracting poorly, showing a control fault or requiring cleaning.<br><b>Step 3: Share Model Details</b> - If possible, provide the model name, product-label information or a photograph of the label.<br><b>Step 4: Confirm Service Availability</b> - Share your Ghaziabad locality so that the available service options can be discussed.<br><b>Step 5: Inspection and Estimate</b> - The technician assesses the fault and explains the proposed work and applicable charges.<br><b>Step 6: Repair or Maintenance</b> - Work proceeds after the scope and estimate have been agreed. Any replacement part should be checked for compatibility.<br><b>Step 7: Operational Check</b> - Where appropriate, the appliance is tested after the work to check its basic operation.</p>
-<h2>Frequently Asked Questions About Hafele Chimney Service</h2>
+<ul><li>Model-Based Troubleshooting</li><li>Clear Communication</li><li>Suitable Repair Options</li><li>Cleaning and Maintenance Support</li><li>Local Service Enquiries</li><li>Transparent Estimates</li><li>Part Warranty Information</li></ul>
+<h2>Booking Process</h2>
+<p><b>Step 1:</b> Call 8796284796<br><b>Step 2:</b> Explain problem<br><b>Step 3:</b> Share model details<br><b>Step 4:</b> Confirm locality<br><b>Step 5:</b> Inspection & estimate<br><b>Step 6:</b> Repair after agreement<br><b>Step 7:</b> Operational check</p>
+<h2>Frequently Asked Questions</h2>
 <div class="faq">
-<div class="faq-item"><b>1. Do you provide Hafele chimney repair in Ghaziabad?</b><p>We accept enquiries for independent Hafele chimney repair across Ghaziabad, subject to technician availability and the type of appliance.</p></div>
-<div class="faq-item"><b>2. Do you service all Hafele chimney models?</b><p>We can assess many types of Hafele cookerhoods. Service feasibility depends on the exact model, fault and availability of compatible parts.</p></div>
-<div class="faq-item"><b>3. Can you repair a Hafele chimney that is not starting?</b><p>Yes, an inspection can help identify whether the issue relates to the power supply, controls, wiring, motor or another component.</p></div>
-<div class="faq-item"><b>4. Why is my Hafele chimney not extracting smoke properly?</b><p>Possible reasons include a blocked airflow path, grease accumulation, duct problems, incorrect installation or a fan-related fault. The cause should be checked before deciding on a repair.</p></div>
-<div class="faq-item"><b>5. Can you repair a noisy Hafele chimney?</b><p>Noise and vibration can have several causes. A technician can inspect the mounting, fan and relevant components to identify a suitable solution.</p></div>
-<div class="faq-item"><b>6. Do you clean filter-free Hafele chimneys?</b><p>Cleaning assistance is available for compatible models. The method depends on the model's design and the manufacturer's maintenance instructions.</p></div>
-<div class="faq-item"><b>7. Can you service Hafele auto-clean chimneys?</b><p>We can assess auto-clean function problems and advise on suitable troubleshooting based on the particular model.</p></div>
-<div class="faq-item"><b>8. Do you provide Hafele chimney installation?</b><p>We accept installation and reinstallation enquiries, subject to the site conditions, appliance requirements and availability.</p></div>
-<div class="faq-item"><b>9. Can you replace a Hafele chimney motor?</b><p>Motor replacement may be possible if a compatible component is available and replacement is technically suitable. The motor type should be confirmed first.</p></div>
-<div class="faq-item"><b>10. Can you repair a Hafele chimney touch panel?</b><p>The panel, power supply, wiring and relevant controls may need inspection. Repair options depend on the diagnosis and part availability.</p></div>
-<div class="faq-item"><b>11. Do you provide a warranty on repairs?</b><p>Any part or workmanship warranty must be confirmed for the specific job. Coverage, duration and exclusions should be documented before the repair is approved.</p></div>
-<div class="faq-item"><b>12. Are you an authorised Hafele service centre?</b><p>No. We provide independent service assistance and do not claim to be an authorised Hafele service centre.</p></div>
-<div class="faq-item"><b>13. How much does Hafele chimney repair cost?</b><p>The cost depends on the fault, model, labour involved and whether parts are required. Request an estimate after explaining the issue.</p></div>
-<div class="faq-item"><b>14. How can I book Hafele chimney service?</b><p>Call 8796284796 and share your locality, chimney model if known, and the problem you are experiencing.</p></div>
-<div class="faq-item"><b>15. What information should I provide before booking?</b><p>Your locality, model name or label details, a description of the fault and any relevant symptoms will help with the initial assessment.</p></div>
-<div class="faq-item"><b>16. Can you service older Hafele chimney models?</b><p>Older models can be assessed, but suitable parts and repair options depend on the exact model and component availability.</p></div>
-<div class="faq-item"><b>17. Is chimney deep cleaning necessary?</b><p>Cleaning requirements vary according to the design and cooking habits. Regular maintenance can help manage grease accumulation and support proper airflow.</p></div>
-<div class="faq-item"><b>18. What should I do if my chimney smells burnt?</b><p>Switch off the appliance and isolate its power if safe to do so. Do not continue operating it until the source of the smell has been inspected.</p></div>
+<div class="faq-item"><b>1. Do you provide Hafele chimney repair in Ghaziabad?</b><p>Yes, independent repair across Ghaziabad, subject to technician availability.</p></div>
+<div class="faq-item"><b>2. Do you service all Hafele models?</b><p>Many types can be assessed. Feasibility depends on exact model, fault and parts.</p></div>
+<div class="faq-item"><b>3. Can you repair chimney not starting?</b><p>Inspection can identify power, controls, wiring, motor issue.</p></div>
+<div class="faq-item"><b>4. Why low suction?</b><p>Blocked airflow, grease, duct problem, installation or fan fault.</p></div>
+<div class="faq-item"><b>5. Can you repair noisy chimney?</b><p>Yes, mounting, fan and components inspection.</p></div>
+<div class="faq-item"><b>6. Do you clean filter-free chimneys?</b><p>Yes, method depends on model's design.</p></div>
+<div class="faq-item"><b>7. Auto-clean repair?</b><p>We can assess auto-clean problems based on model.</p></div>
+<div class="faq-item"><b>8. Installation service?</b><p>Yes, subject to site conditions.</p></div>
+<div class="faq-item"><b>9. Motor replacement?</b><p>Possible if compatible component available.</p></div>
+<div class="faq-item"><b>10. Touch panel repair?</b><p>Panel, power, wiring inspection needed.</p></div>
+<div class="faq-item"><b>11. Warranty on repairs?</b><p>Part/workmanship warranty must be confirmed for specific job.</p></div>
+<div class="faq-item"><b>12. Are you authorised Hafele centre?</b><p>No. Independent service assistance.</p></div>
+<div class="faq-item"><b>13. Cost?</b><p>Depends on fault, model, labour, parts. Request estimate.</p></div>
+<div class="faq-item"><b>14. How to book?</b><p>Call 8796284796 with locality, model and problem.</p></div>
+<div class="faq-item"><b>15. What to provide before booking?</b><p>Locality, model/label, fault description.</p></div>
+<div class="faq-item"><b>16. Older models?</b><p>Can be assessed, parts depend on availability.</p></div>
+<div class="faq-item"><b>17. Is deep cleaning necessary?</b><p>Varies by design and cooking habits.</p></div>
+<div class="faq-item"><b>18. What if chimney smells burnt?</b><p>Switch off and isolate power if safe, arrange inspection.</p></div>
 </div>
-<h2>Book Hafele Chimney Service in Ghaziabad Today</h2>
-<div class="highlight" style="text-align:center">
+<div class="highlight" style="text-align:center;margin-top:18px">
 <p style="font-size:14px;color:#0b1a30;font-weight:700">Is your Hafele kitchen chimney making unusual noise, losing suction, failing to start or requiring cleaning?</p>
-<p style="margin-top:8px">Contact us to discuss independent Hafele chimney service, repair, installation or maintenance in Ghaziabad.</p>
-<p style="margin-top:10px;font-weight:800;color:#0b1a30">Call Now: 8796284796<br>Service: Hafele Kitchen Chimney Repair, Installation and Cleaning<br>Location: Ghaziabad, Uttar Pradesh<br>Service Type: Independent appliance service</p>
-<p style="margin-top:8px">Our aim is to provide clear information, suitable troubleshooting and practical service options for your Hafele kitchen chimney.</p>
+<p>Contact us for independent Hafele chimney service, repair, installation or maintenance in Ghaziabad.</p>
 </div>
 </div>
 
@@ -294,32 +213,31 @@ body{background:#f8fafc;color:#1e293b}
 
 <div class="disclaimer-box">
 <div class="disc-head"><div class="disc-icon">⚠️</div><h3>Important Disclaimer - Independent Service Provider</h3></div>
-<p>We are an <b style="color:#ff8a4c">Independent Service Provider</b> for Hafele kitchen chimney repair, installation & cleaning in Ghaziabad. We are <b style="color:#fff">NOT authorized by Hafele</b> and not affiliated with Hafele brand or official service centre. Hafele name, logo & trademarks are used only for identification of chimney type to be serviced.</p>
-<p style="margin-top:8px">Our services are independently arranged, subject to technician availability, model compatibility & fault nature. Manufacturer warranty coverage should be checked with Hafele before authorising third-party repairs. Independent repairs may affect warranty as per terms. All services come with <b style="color:#4ade80">90 Days Service Warranty</b> on workmanship, transparent charges after inspection, genuine compatible parts where available.</p>
-<div class="disc-tags"><div class="disc-tag">✓ Independent Service</div><div class="disc-tag">✓ Noindex - Ads Safe</div><div class="disc-tag">✓ 90 Days Warranty</div><div class="disc-tag">✓ Transparent Pricing</div><div class="disc-tag">✓ Full Ghaziabad</div><div class="disc-tag">✓ Model-Based Repair</div></div>
+<p>We are an <b style="color:#ff8a4c">Independent Service Provider</b> for Hafele kitchen chimney repair, installation & cleaning in Ghaziabad. We are <b style="color:#fff">NOT authorized by Hafele</b> and not affiliated with Hafele brand or official service centre.</p>
+<p style="margin-top:8px">Services are subject to technician availability, model compatibility & fault nature. Manufacturer warranty should be checked with Hafele before authorising third-party repairs. Independent repairs may affect warranty. All services come with <b style="color:#4ade80">90 Days Service Warranty</b>.</p>
+<div class="disc-tags"><div class="disc-tag">✓ Independent Service</div><div class="disc-tag">✓ Noindex - Ads Safe</div><div class="disc-tag">✓ 90 Days Warranty</div><div class="disc-tag">✓ Transparent Pricing</div><div class="disc-tag">✓ Full Ghaziabad</div></div>
 </div>
 </div>
 
 <div class="modal" id="modal">
 <div class="modal-box">
 <div class="close" onclick="closeForm()">×</div>
-<div class="booking-head"><h2>Quick Booking</h2><p>2 min me call + WhatsApp</p></div>
+<div class="booking-head"><h2>Quick Booking</h2><p>2 min me call + booking</p></div>
 <div class="field"><label>Name *</label><input id="m_name" placeholder="Your Name"></div>
 <div class="field"><label>Mobile *</label><input id="m_mobile" placeholder="Mobile Number"></div>
 <div class="field"><label>Address *</label><textarea id="m_address" rows="2" placeholder="Your Address"></textarea></div>
 <div class="field"><label>Service *</label><select id="m_service"><option value="">Choose Service</option><option>Deep Cleaning Service</option><option>Basic Service</option><option>Noise Issue Fix</option><option>Chimney Not Working</option><option>Oil Leakage Fix</option><option>Low Suction Fix</option><option>Motor Repair</option><option>PCB / Touch Repair</option><option>Filter / Duct Cleaning</option><option>Gas Stove / Hob Cleaning</option><option>Gas Stove / Hob Repair</option><option>Installation</option><option>Full Combo Service</option></select></div>
-<button class="submit" onclick="sendWA('modal')">📲 Book on WhatsApp</button>
+<button class="submit" onclick="sendWA('modal')">📅 Book Now - Hafele Care</button>
 </div>
 </div>
 
-<!-- CALL NOW POPUP -->
 <div class="call-popup" id="callPopup">
 <div class="call-popup-box">
 <div class="big-icon">📞</div>
 <h3>Need Hafele Chimney Service Today?</h3>
-<p>Our technician is available in Ghaziabad now. Call for same-day inspection, cleaning & repair. 90 days warranty on service.</p>
+<p>Our technician is available in Ghaziabad now. Call for same-day inspection, cleaning & repair. 90 days warranty.</p>
 <a href="tel:8796284796" class="call-now-btn">📞 Call Now - 8796284796</a>
-<a href="#" class="call-now-btn" style="background:#25D366" onclick="openForm();closeCallPopup();return false">📲 Book on WhatsApp</a>
+<a href="#" class="call-now-btn" style="background:#ff6600" onclick="openForm();closeCallPopup();return false">📅 Book Now - Hafele Care</a>
 <span class="call-later" onclick="closeCallPopup()">Continue Browsing →</span>
 </div>
 </div>
@@ -337,7 +255,6 @@ function openForm(s){document.getElementById('modal').classList.add('active');if
 function closeForm(){document.getElementById('modal').classList.remove('active');}
 function sendWA(t){let n,m,a,s;if(t=='main'){n=document.getElementById('name').value;m=document.getElementById('mobile').value;a=document.getElementById('address').value;s=document.getElementById('service').value}else{n=document.getElementById('m_name').value;m=document.getElementById('m_mobile').value;a=document.getElementById('m_address').value;s=document.getElementById('m_service').value}if(!n||!m||!a||!s){alert('Sab fields bharo - Name, Mobile, Address, Service *');return}let msg=`*🔧 New Hafele Booking*%0A%0A👤 Name: ${n}%0A📱 Mobile: ${m}%0A🏠 Address: ${a}%0A🔧 Service: ${s}%0A📍 Ghaziabad%0A%0A_Hafele Care Ghaziabad_`;window.open(`https://wa.me/918796284796?text=${msg}`,'_blank');}
 document.getElementById('modal').addEventListener('click',e=>{if(e.target==e.currentTarget)closeForm()});
-// CALL POPUP LOGIC
 function showCallPopup(){document.getElementById('callPopup').classList.add('active')}
 function closeCallPopup(){document.getElementById('callPopup').classList.remove('active');localStorage.setItem('callPopupClosed','1')}
 setTimeout(()=>{if(!localStorage.getItem('callPopupClosed'))showCallPopup()},4000);
